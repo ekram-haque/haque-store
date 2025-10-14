@@ -25,7 +25,7 @@ const Banner = () => {
             
             <div className="stat-title text-white">Active Apps</div>
             <div className="stat-value">132+</div>
-            <div className="stat-desc text-white" text-white>31 more will Launch</div>
+            <div className="stat-desc text-white" >31 more will Launch</div>
           </div>
         </div>
             </div>

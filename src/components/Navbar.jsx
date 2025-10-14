@@ -1,49 +1,88 @@
 import { EllipsisVertical, Github } from "lucide-react";
 import React from "react";
+import { Link } from "react-router";
+
+const handleGithubRedirect = () => {
+  window.open("https://github.com/ekram-haque", "_blank");
+};
 
 const Navbar = () => {
   return (
-   
-
-<div className=" bg-base-100 shadow-sm">
-  <div className="w-11/12 mx-auto navbar">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden py-[5px]">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      <ul
-        tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
-        <li><a>Apps</a></li>
-        <li><a>Installation</a></li>
-      </ul>
-    </div>
-    <div className="flex items-center gap-1">
-         <img src="/src/assets/logo.png" className="w-[40px] h-[40px]"   alt="" />
-         <h1 className="md:text-xl text-sm font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">
-           Haque Store
-         </h1>
-       </div>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-        <li><a>Apps</a></li>
-        <li><a>Installation</a></li>
-    </ul>
-  </div>
-  <div className="navbar-end">
-     <div className="flex gap-1 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white  px-4 py-3 rounded-lg hover:cursor-pointer">
-             <Github />
-            <button className="">
-              Contribute
-          </button>
+    <div className=" bg-base-100 shadow-sm">
+      <div className="w-11/12 mx-auto navbar">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden py-[5px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {" "}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />{" "}
+              </svg>
+            </div>
+            <ul
+              tabIndex="-1"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <Link to={`/home`}>Home</Link>
+              </li>
+              <li>
+                <Link to={`/apps`}>Apps</Link>
+              </li>
+              <li>
+                <Link to={`/installation`}>Installation</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex items-center gap-1">
+            <img
+              src="/src/assets/logo.png"
+              className="w-[40px] h-[40px]"
+              alt=""
+            />
+            <Link
+              to={`/home`}
+              className="md:text-xl text-sm font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent "
+            >
+              Haque Store
+            </Link>
+          </div>
         </div>
-  </div>
-</div>
-</div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <Link to={`/home`}>Home</Link>
+            </li>
+            <li>
+              <Link to={`/apps`}>Apps</Link>
+            </li>
+            <li>
+              <Link to={`/installation`}>Installation</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-end hover:cursor-pointer">
+          <div className="flex gap-1 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white  px-4 py-3 rounded-lg ">
+            <Github />
+            <button onClick={handleGithubRedirect} className="hover:cursor-pointer">Contribute</button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
