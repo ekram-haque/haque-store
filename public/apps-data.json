@@ -1,0 +1,543 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/h1VV0Fp9/Facebook.jpg",
+    "title": "Facebook",
+    "companyName": "Meta Platforms Inc.",
+    "description": "Connect with friends, share updates, photos, and stay informed.",
+    "size": 120,
+    "reviews": 8000000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 3600000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/xt8Nkvnj/cone-do-instagram-de-logotipo-de-distintivo-moderno-Vetor-Premium.jpg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms Inc.",
+    "description": "Share photos, videos, and stories with your friends and followers.",
+    "size": 95,
+    "reviews": 9000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 350000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 6450000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/DfSHX6qf/Alarm-Icon.jpg",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "SleepLab",
+    "description": "The world’s most annoying alarm clock to make sure you never oversleep.",
+    "size": 95,
+    "reviews": 214000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 40000 },
+      { "name": "5 star", "count": 157000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/RdKb55P/download-2.jpg",
+    "title": "WhatsApp",
+    "companyName": "WhatsApp LLC",
+    "description": "Secure, simple, and fast messaging and calling worldwide.",
+    "size": 80,
+    "reviews": 10000000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 7200000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/6Rtq9WNQ/Spotify-subscription.jpg",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "description": "Stream millions of songs and podcasts anywhere, anytime.",
+    "size": 85,
+    "reviews": 6500000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 4750000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/PBmktzn/Psd-File-Clipart-Vector-Quora-Icon-Png-And-Psd-File-Download-Download-Icons-File-Icons-Psd-Icons-PNG.jpg",
+    "title": "Quora",
+    "companyName": "Quora Inc.",
+    "description": "Ask questions, get answers, and share knowledge with the world.",
+    "size": 60,
+    "reviews": 1200000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 500000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/4RrnBm7D/Download-Youtube-logo-png-Youtube-logo-transparent-png-Youtube-icon-transparent-free-png.jpg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "Watch, upload, and share videos with billions of people worldwide.",
+    "size": 150,
+    "reviews": 12000000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 8200000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/Myr04fxV/Netflix-logo-designed-in-pixellabe-mobile.jpg",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "description": "Stream your favorite TV shows, movies, and exclusive originals.",
+    "size": 190,
+    "reviews": 5000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 3150000 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/ns0135PC/Forest-Stay-focused-by-SEEKRTECH-CO-LTD.jpg",
+    "title": "Forest: Focus for Productivity",
+    "companyName": "SeekrTech",
+    "description": "Stay focused and plant trees while avoiding distractions.",
+    "size": 85,
+    "reviews": 152300,
+    "ratingAvg": 4.8,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 127300 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/5XqSVtsn/Snapchat.jpg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "description": "Send snaps, share stories, and chat instantly with your friends.",
+    "size": 110,
+    "reviews": 4000000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 2250000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/0RQ4CtXn/download-2.jpg",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc.",
+    "description": "Discover new ideas and inspiration for your lifestyle and projects.",
+    "size": 85,
+    "reviews": 2000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1300000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/Y4d8hqpD/Discord-Logo.jpg",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "description": "Join servers, chat with communities, and talk with friends easily.",
+    "size": 140,
+    "reviews": 3000000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 1630000 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co.com/sv843XFr/download-3.jpg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "description": "Cloud-based messaging with focus on speed and privacy.",
+    "size": 70,
+    "reviews": 2500000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1550000 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co.com/nqmBx6ZV/Download-Zoom-Logo-Illustration-In-Square-Background.jpg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "description": "Video conferencing made simple and reliable for meetings and calls.",
+    "size": 180,
+    "reviews": 3500000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co.com/yFLBpZKf/Canva-Logo.jpg",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd.",
+    "description": "Design anything from social posts to presentations with ease.",
+    "size": 100,
+    "reviews": 2700000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1850000 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "/src/assets/demo-app (6).webp",
+    "title": "Minimalist: Simple To-Do",
+    "companyName": "Minimal Labs",
+    "description": "A clean and distraction-free app for managing daily tasks.",
+    "size": 35,
+    "reviews": 48000,
+    "ratingAvg": 4.6,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 13000 },
+      { "name": "5 star", "count": 29300 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co.com/67WTN8Ss/15-Logo-Linkedin-Png.jpg",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "description": "Grow your professional network and find new career opportunities.",
+    "size": 110,
+    "reviews": 2300000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1380000 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co.com/V0rtc4gZ/New-2023-twitter-logo-x-icon-design-Free-Vector.jpg",
+    "title": "Twitter",
+    "companyName": "X Corp.",
+    "description": "Join conversations, follow trends, and share what’s happening.",
+    "size": 75,
+    "reviews": 6000000,
+    "ratingAvg": 4.1,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 3100000 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co.com/xtSZp3pL/The-History-of-the-Amazon-Logo.jpg",
+    "title": "Amazon",
+    "companyName": "Amazon Mobile LLC",
+    "description": "Shop millions of products and enjoy fast delivery worldwide.",
+    "size": 130,
+    "reviews": 9000000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 5600000 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co.com/cczbk0Wx/Tech-Update.jpg",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "description": "Navigate the world with accurate maps and live traffic updates.",
+    "size": 90,
+    "reviews": 12000000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 7500000 }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://i.ibb.co.com/wmvTfXZ/duolingo-logo-brand-icon.jpg",
+    "title": "Duolingo",
+    "companyName": "Duolingo Inc.",
+    "description": "Learn languages for free with fun, bite-sized lessons.",
+    "size": 70,
+    "reviews": 5000000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 3950000 }
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://i.ibb.co.com/C3hNTCjh/Trello-Logo.jpg",
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "description": "Organize your work and life with boards, lists, and cards.",
+    "size": 65,
+    "reviews": 800000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 430000 }
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://i.ibb.co.com/XrYZj1Hn/Dropbox.jpg",
+    "title": "Dropbox",
+    "companyName": "Dropbox Inc.",
+    "description": "Securely store, sync, and share files across all your devices.",
+    "size": 120,
+    "reviews": 1100000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 640000 }
+    ]
+  },
+  {
+  "id": 24,
+  "image": "https://i.ibb.co.com/v47prk6y/10-ways-to-use-Notion-to-level-up-your-life.jpg",
+  "title": "Notion - Notes & Tasks",
+  "companyName": "Notion Labs",
+  "description": "All-in-one workspace for notes, tasks, databases, and collaboration.",
+  "size": 120,
+  "reviews": 540000,
+  "ratingAvg": 4.8,
+  "downloads": 10000000,
+  "ratings": [
+    { "name": "1 star", "count": 4000 },
+    { "name": "2 star", "count": 5000 },
+    { "name": "3 star", "count": 15000 },
+    { "name": "4 star", "count": 80000 },
+    { "name": "5 star", "count": 436000 }
+  ]
+},
+  {
+    "id": 25,
+    "image": "https://i.ibb.co.com/nMvzym0w/Adobe-Photoshop-en-App-Store.jpg",
+    "title": "Adobe Photoshop Express",
+    "companyName": "Adobe Inc.",
+    "description": "Edit photos, create collages, and enhance images quickly.",
+    "size": 150,
+    "reviews": 2100000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1330000 }
+    ]
+  },
+  {
+    "id": 26,
+    "image": "https://i.ibb.co.com/7xSkTybp/capcut-logo-fro-professional-editing-editing-material.jpg",
+    "title": "CapCut",
+    "companyName": "ByteDance Ltd.",
+    "description": "Create high-quality videos with powerful editing tools easily.",
+    "size": 180,
+    "reviews": 3700000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 2250000 }
+    ]
+},
+
+  {
+    "id": 27,
+    "image": "https://i.ibb.co.com/67dKPq0y/Pet-shop-logo-design-with-dog-and-cat-in-the-middle-of-dog-paws-animal-stencil-vector-illustration-P.jpg",
+    "title": "Pomocat: Cute Pomodoro Timer",
+    "companyName": "Catify Studio",
+    "description": "A cute cat-themed timer to make your work and study more enjoyable.",
+    "size": 55,
+    "reviews": 40300,
+    "ratingAvg": 4.9,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 33800 }
+    ]
+  },
+  {
+    "id": 28,
+    "image": "https://i.ibb.co.com/fYQMyRJw/download-2.jpg",
+    "title": "VSCO",
+    "companyName": "VSCO",
+    "description": "Capture, edit, and share beautiful photos with advanced tools.",
+    "size": 110,
+    "reviews": 1700000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 960000 }
+    ]
+  },
+  {
+    "id": 29,
+    "image": "https://i.ibb.co.com/ZR3nf2Bj/download-3.jpg",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "description": "Collaborate and communicate seamlessly with your team.",
+    "size": 130,
+    "reviews": 2200000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1360000 }
+    ]
+  },
+  {
+    "id": 30,
+    "image": "https://i.ibb.co.com/B2KDBXq1/Google-Drive-Logo-Icon-PNG-Logo-Vector-Brand-Downloads-SVG-EPS.jpg",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "description": "Store files safely and access them from any device.",
+    "size": 140,
+    "reviews": 8500000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 5100000 }
+    ]
+  }
+]

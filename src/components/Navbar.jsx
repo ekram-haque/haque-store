@@ -1,6 +1,6 @@
 import { EllipsisVertical, Github } from "lucide-react";
 import React from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const handleGithubRedirect = () => {
   window.open("https://github.com/ekram-haque", "_blank");
@@ -38,13 +38,13 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to={`/home`}>Home</Link>
+                <NavLink to={`/home`}>Home</NavLink>
               </li>
               <li>
-                <Link to={`/apps`}>Apps</Link>
+                <NavLink to={`/apps`}>Apps</NavLink>
               </li>
               <li>
-                <Link to={`/installation`}>Installation</Link>
+                <NavLink to={`/installation`}>Installation</NavLink>
               </li>
             </ul>
           </div>
@@ -65,13 +65,13 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to={`/home`}>Home</Link>
+              <NavLink to={`/home`}>Home</NavLink>
             </li>
             <li>
-              <Link to={`/apps`}>Apps</Link>
+              <NavLink to={`/apps`}>Apps</NavLink>
             </li>
             <li>
-              <Link to={`/installation`}>Installation</Link>
+              <NavLink to={`/installation`}>Installation</NavLink>
             </li>
           </ul>
         </div>

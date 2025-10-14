@@ -1,6 +1,35 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = ({apps}) => {
+
+
+  const totalDownloads = apps.reduce((sum, app) => sum + app.downloads, 0);
+
+  const downloadFormat = (num) =>{
+        if(num >=1000000){
+            return (num / 1000000).toFixed(1)+" M" 
+        }
+         if( num >= 1000){
+            return (num / 1000).toFixed(1) +" K"
+         }
+         else{
+            return num.toString();
+         }
+    }
+  const totalReview = apps.reduce((sum, app) => sum + app.reviews, 0);
+
+  const reviewFormat = (num) =>{
+        if(num >=1000000){
+            return (num / 1000000).toFixed(1)+" M" 
+        }
+         if( num >= 1000){
+            return (num / 1000).toFixed(1) +" K"
+         }
+         else{
+            return num.toString();
+         }
+    }
+
   return (
     <div>
        {/* hero section  */}
@@ -10,21 +39,21 @@ const Banner = () => {
           <div className="stat text-white">
             
             <div className="stat-title text-white">Total Downloads</div>
-            <div className="stat-value">29.6M</div>
+            <div className="stat-value">{downloadFormat(totalDownloads)}</div>
             <div className="stat-desc text-white">21% more than last month</div>
           </div>
 
           <div className="stat">
            
             <div className="stat-title text-white"> Total Reviews</div>
-            <div className="stat-value">906K</div>
+            <div className="stat-value">{reviewFormat(totalReview)}</div>
             <div className="stat-desc text-white">46% more than last month</div>
           </div>
 
           <div className="stat">
             
             <div className="stat-title text-white">Active Apps</div>
-            <div className="stat-value">132+</div>
+            <div className="stat-value">{apps.length}</div>
             <div className="stat-desc text-white" >31 more will Launch</div>
           </div>
         </div>
