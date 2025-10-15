@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { useParams } from "react-router";
+import { Form, useParams } from "react-router";
 import useApps from "../hooks/useApps";
+import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+
 
 const AppInfo = () => {
   const { id } = useParams();
@@ -21,6 +23,7 @@ const AppInfo = () => {
     reviews,
     size,
     description,
+    ratings
   } = app;
 
   const Format = (num) => {
@@ -127,14 +130,35 @@ const AppInfo = () => {
                 onClick={handleInstallation}
                 className={`px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md`}
               >
-                Install Now (${size} MB)
+                Install Now ({size} MB)
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div className=" my-[50px] font-bold">ratings.</div>
+<div className="w-11/12 mx-auto my-[50px] h-80">
+    <h3 className="font-bold">Ratings</h3>
+  <ResponsiveContainer width="100%" height="100%">
+    <BarChart
+      layout="vertical"
+      data={ratings}
+      margin={{ top: 20, right: 30,  bottom: 20 }}
+    >
+      <XAxis type="number" tickFormatter={(value) => Format(value)} />
+      <YAxis type="category" dataKey="name" reversed  />
+      <Tooltip />
+      <Bar
+        dataKey="count"
+        fill="#FF8800"
+        barSize={25}
+        radius={[5, 5, 5, 5]}
+        label={{ position: "right", formatter: (val) => Format(val) }}
+      />
+    </BarChart>
+  </ResponsiveContainer>
+</div>
+
       <hr className="my-4 border-gray-200" />
       <div className=" my-[50px] ">
         <h2 className="font-bold mb-[25px]">description</h2>
