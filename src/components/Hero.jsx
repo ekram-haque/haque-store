@@ -3,6 +3,18 @@ import { BiLogoPlayStore } from "react-icons/bi";
 import { FaAppStoreIos } from "react-icons/fa";
 
 const Hero = () => {
+
+  
+const handleGooglePlayRedirect = () => {
+  window.open("https://play.google.com/store/games?hl=en", "_blank");
+};
+
+
+const handleAppStoreRedirect = () => {
+  window.open("https://www.apple.com/app-store/", "_blank");
+};
+
+
   return (
     <div>
       <div className="hero mt-[80px] ">
@@ -21,11 +33,11 @@ const Hero = () => {
               ideas into digital experiences that truly make an impact.
             </p>
             <div className="flex items-center justify-center gap-[10px]">
-              <button className="btn ">
+              <button onClick={handleGooglePlayRedirect} className="btn cursor-pointer ">
                 <img src="/src/assets/play-store.png" alt="" />
                 Play Store
               </button>
-              <button className="btn ">
+              <button onClick={handleAppStoreRedirect} className="btn cursor-pointer">
                 <img src="/src/assets/app-store.png" alt="" />
                 App Store
               </button>

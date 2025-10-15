@@ -2,13 +2,16 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import TrendingApp from "../components/TrendingApp";
-import { Link, useLoaderData } from "react-router";
+import { Link } from "react-router";
 import { HiH3 } from "react-icons/hi2";
 import AppCard from "../components/AppCard";
+import useApps from "../hooks/useApps";
 
 const Home = () => {
-  const apps = useLoaderData();
-  console.log(apps)
+
+  
+  const {apps,loading,error} = useApps()
+  // console.log(apps)
 
   const trendingApps = apps.slice(0, 10);
 
