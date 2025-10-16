@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import useApps from "../hooks/useApps";
 import LoadingAnimation from "../components/LoadingAnimation";
 import { toast } from "react-toastify";
+import { Link } from "react-router";
 
 const Installation = () => {
   const [install, setInstall] = useState([]);
   const [sortApp, setSortApp] = useState("none");
   const { loading } = useApps();
+  const [uninstall, setUninstall] = useState(null);
 
   useEffect(() => {
     const installed = JSON.parse(localStorage.getItem("installed"));
@@ -24,15 +26,18 @@ const Installation = () => {
   };
 
   const handleDeleteApps = (id) => {
-    const installed = JSON.parse(localStorage.getItem("installed"));
+    setUninstall(id);
 
-    let newInstalled = installed.filter((a) => a.id !== id);
-    setInstall(newInstalled);
+    setTimeout(() => {
+      const installed = JSON.parse(localStorage.getItem("installed"));
 
-    localStorage.setItem("installed", JSON.stringify(newInstalled));
-    toast.success("Successfully Delete");
-    // setUninstall(true);
-    console.log(newInstalled);
+      const newInstalled = installed.filter((a) => a.id !== id);
+      setInstall(newInstalled);
+
+      localStorage.setItem("installed", JSON.stringify(newInstalled));
+      toast.success("Successfully Delete");
+      setUninstall(null);
+    }, 500);
   };
 
   const Format = (num) => {
@@ -77,47 +82,87 @@ const Installation = () => {
           </div>
 
           <div className=" mt-[50px] mb-[80px]">
-            <div>
-              {sortedApps().map((app) => (
-                <div className="w-11/12 mx-auto mb-[10px] bg-white border border-gray-200 shadow-sm rounded-xl px-4 py-3 flex items-center justify-between hover:shadow-md transition">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gray-200 rounded-md flex items-center justify-center">
-                      {app.image ? (
-                        <img
-                          src={app.image}
-                          alt={app.title}
-                          className="w-full h-full object-cover rounded-md"
-                        />
-                      ) : (
-                        <span className="text-gray-400 text-xs">No Img</span>
-                      )}
-                    </div>
+            {uninstall ? (
+              <LoadingAnimation />
+            ) : install.length ===0 ? (
 
-                    <div>
-                      <h3 className="text-sm font-medium text-gray-800">
-                        {app.title}
-                      </h3>
-                      <div className="flex items-center gap-3 text-xs text-gray-500 mt-1">
-                        <span className="flex items-center gap-1 text-green-500 font-semibold">
-                          <Download size={12} /> {Format(app.downloads)}
-                        </span>
-                        <span className="flex items-center gap-1 text-amber-500 font-semibold">
-                          <Star size={12} /> {app.ratingAvg}
-                        </span>
-                        <span className="text-gray-400">{app.size} MB</span>
+
+
+              
+               <div>
+      <div className="flex flex-col justify-center items-center mt-[30px]  ">
+        
+        <h3 className="text-2xl font-bold ">There is no Install App</h3>
+        <p>
+          We found no Install app in this page, please Install any app first and then come here.
+        </p>
+        <div className="flex justify-center pt-[40px] pb-[80px]">
+          <Link
+            to={`/apps`}
+            className="hover:cursor-pointer bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-4 py-3 rounded-md text-center font-bold "
+          >
+           Install App
+          </Link>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+            ) : (
+              <div>
+                <div>
+                  {sortedApps().map((app) => (
+                    <div className="w-11/12 mx-auto mb-[10px] bg-white border border-gray-200 shadow-sm rounded-xl px-4 py-3 flex items-center justify-between hover:shadow-md transition">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 bg-gray-200 rounded-md flex items-center justify-center">
+                          {app.image ? (
+                            <img
+                              src={app.image}
+                              alt={app.title}
+                              className="w-full h-full object-cover rounded-md"
+                            />
+                          ) : (
+                            <span className="text-gray-400 text-xs">
+                              No Img
+                            </span>
+                          )}
+                        </div>
+
+                        <div>
+                          <h3 className="text-sm font-medium text-gray-800">
+                            {app.title}
+                          </h3>
+                          <div className="flex items-center gap-3 text-xs text-gray-500 mt-1">
+                            <span className="flex items-center gap-1 text-green-500 font-semibold">
+                              <Download size={12} /> {Format(app.downloads)}
+                            </span>
+                            <span className="flex items-center gap-1 text-amber-500 font-semibold">
+                              <Star size={12} /> {app.ratingAvg}
+                            </span>
+                            <span className="text-gray-400">{app.size} MB</span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
 
-                  <button
-                    onClick={() => handleDeleteApps(app.id)}
-                    className="px-3 py-1 bg-emerald-500 hover:bg-emerald-600 text-white text-sm rounded-md font-medium transition"
-                  >
-                    Uninstall
-                  </button>
+                      <button
+                        onClick={() => handleDeleteApps(app.id)}
+                        className="px-3 py-1 bg-emerald-500 hover:bg-emerald-600 text-white text-sm rounded-md font-medium transition"
+                      >
+                        Uninstall
+                      </button>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       )}

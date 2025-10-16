@@ -3,7 +3,7 @@ import AppCard from "../components/AppCard";
 import useApps from "../hooks/useApps";
 import LoadingSkeleton from "../components/LoadingSkeleton";
 import AppSearchError from "../components/AppSearchError";
-import SearchLoading from "../components/LoadingAnimation";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const Apps = () => {
   const { apps, loading } = useApps();
@@ -41,7 +41,7 @@ const Apps = () => {
   return (
     <div className="py-[80px] container mx-auto">
       {loading ? (
-        <SearchLoading />
+        <LoadingAnimation />
       ) : (
         <div>
           <div className="flex flex-col justify-center items-center text-center">
