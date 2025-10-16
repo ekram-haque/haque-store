@@ -3,7 +3,7 @@ import MainLayout from "../layout/MainLayout.jsx";
 import Home from "../pages/Home.jsx";
 import Apps from "../pages/Apps.jsx";
 import Installation from "../pages/Installation.jsx";
-import AppInfo from "../pages/AppInfo.jsx"
+import AppInfo from "../pages/AppInfo.jsx";
 import RouteError from "../pages/RouteError.jsx";
 
 const router = createBrowserRouter([
@@ -14,29 +14,25 @@ const router = createBrowserRouter([
     hydrateFallbackElement: <p>loading....</p>,
     children: [
       {
-        path:'/',
-        element:<Home/>,
-        
+        path: "/",
+        element: <Home />,
       },
       {
         path: "/home",
         element: <Home />,
-        
       },
       {
         path: "/apps",
         element: <Apps />,
-        
       },
       {
         path: "/installation",
         element: <Installation />,
       },
       {
-        path:"/AppInfo/:id",
-        element: <AppInfo/>
+        path: "/apps/:id",
+        element: <AppInfo />,
       },
-      
     ],
   },
 ]);

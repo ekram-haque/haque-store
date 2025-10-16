@@ -1,12 +1,20 @@
 import { EllipsisVertical, Github } from "lucide-react";
 import React from "react";
-import { Link, NavLink } from "react-router";
-
-const handleGithubRedirect = () => {
-  window.open("https://github.com/ekram-haque", "_blank");
-};
+import { Link, NavLink, useNavigation } from "react-router";
+import SearchLoading from "./LoadingAnimation";
+import useApps from "../hooks/useApps";
 
 const Navbar = () => {
+  const { loading } = useApps();
+
+  const handleGithubRedirect = () => {
+    window.open("https://github.com/ekram-haque", "_blank");
+  };
+
+  const navigation = useNavigation();
+
+  const isLoading = navigation.state === "loading";
+
   return (
     <div className=" bg-base-100 shadow-sm">
       <div className="w-11/12 mx-auto navbar">
@@ -65,23 +73,50 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <NavLink to={`/home`}>Home</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-purple-400 underline font-bold" : ""
+                }
+                to={`/home`}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to={`/apps`}>Apps</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-purple-400 underline font-bold" : ""
+                }
+                to={`/apps`}
+              >
+                Apps
+              </NavLink>
             </li>
             <li>
-              <NavLink to={`/installation`}>Installation</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-purple-400 underline font-bold" : ""
+                }
+                to={`/installation`}
+              >
+                Installation
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end hover:cursor-pointer">
-          <div className="flex gap-1 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white  px-4 py-3 rounded-lg ">
+          <div className="flex  gap-1 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white  px-4 py-3 rounded-lg ">
             <Github />
-            <button onClick={handleGithubRedirect} className="hover:cursor-pointer">Contribute</button>
+            <button
+              onClick={handleGithubRedirect}
+              className="hover:cursor-pointer"
+            >
+              Contribute
+            </button>
           </div>
         </div>
       </div>
+      {loading && isLoading && <SearchLoading />}
     </div>
   );
 };

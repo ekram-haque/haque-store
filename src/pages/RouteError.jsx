@@ -5,9 +5,8 @@ import Footer from "../components/Footer";
 
 const RouteError = () => {
   return (
- 
     <div>
-           <Navbar/>
+      <Navbar />
       <div className="flex flex-col justify-center items-center mt-[100px] h-[680px] ">
         <img
           src="/src/assets/error-404.png"
@@ -24,9 +23,8 @@ const RouteError = () => {
             Go Back!
           </Link>
         </div>
-
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

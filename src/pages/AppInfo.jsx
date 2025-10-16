@@ -1,19 +1,38 @@
-import React, { useState } from "react";
-import { Form, useParams } from "react-router";
+import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
-import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-
+import {
+  Bar,
+  BarChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import Apps from "./Apps";
+import AppSearchError from "../components/AppSearchError";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const AppInfo = () => {
   const { id } = useParams();
-  const { apps, loading, error } = useApps();
+  const { apps, loading } = useApps();
+  const [isInstall, setIsInstall] = useState(false);
 
-  //   console.log(apps);
-  if (loading) return <p>loading....</p>;
+  // console.log(apps);
 
   const app = apps.find((a) => String(a.id) === id);
-  //   console.log(app);
+  // console.log(app);
 
+  useEffect(() => {
+    const installed = JSON.parse(localStorage.getItem("installed")) || [];
+    const isExist = installed.some((a) => String(a.id) === id);
+    if (isExist) setIsInstall(true);
+  }, [id]);
+
+  if (loading) return <LoadingAnimation />;
+
+  if (!app) return <AppSearchError />;
   const {
     image,
     title,
@@ -23,7 +42,7 @@ const AppInfo = () => {
     reviews,
     size,
     description,
-    ratings
+    ratings,
   } = app;
 
   const Format = (num) => {
@@ -41,23 +60,24 @@ const AppInfo = () => {
   };
 
   const handleInstallation = () => {
-    const installed = JSON.parse(localStorage.getItem("installed"));
+    const installed = JSON.parse(localStorage.getItem("installed")) || [];
 
     let newInstalled = [];
 
     if (installed) {
       const isExist = installed.find((a) => a.id === app.id);
-      if (isExist) {
-        alert("already have");
 
-        return;
-      }
+      if (isExist) return toast.error("Already Installed");
+
       newInstalled = [...installed, app];
+      setIsInstall(true);
     } else {
       newInstalled.push(app);
     }
+    toast.success(`Install successfully.  ${title}`);
 
     localStorage.setItem("installed", JSON.stringify(newInstalled));
+    setIsInstall(true);
 
     console.log(newInstalled);
   };
@@ -126,38 +146,47 @@ const AppInfo = () => {
 
             {/* Install Button */}
             <div className="mt-6">
-              <button
-                onClick={handleInstallation}
-                className={`px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md`}
-              >
-                Install Now ({size} MB)
-              </button>
+              {isInstall ? (
+                <button
+                  disabled={true}
+                  className={`px-6 py-3 bg-green-500  text-white font-semibold rounded-lg shadow-md `}
+                >
+                  Installed
+                </button>
+              ) : (
+                <button
+                  onClick={handleInstallation}
+                  className={`px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md cursor-pointer`}
+                >
+                  Install Now {size} MB
+                </button>
+              )}
             </div>
           </div>
         </div>
       </div>
 
-<div className="w-11/12 mx-auto my-[50px] h-80">
-    <h3 className="font-bold">Ratings</h3>
-  <ResponsiveContainer width="100%" height="100%">
-    <BarChart
-      layout="vertical"
-      data={ratings}
-      margin={{ top: 20, right: 30,  bottom: 20 }}
-    >
-      <XAxis type="number" tickFormatter={(value) => Format(value)} />
-      <YAxis type="category" dataKey="name" reversed  />
-      <Tooltip />
-      <Bar
-        dataKey="count"
-        fill="#FF8800"
-        barSize={25}
-        radius={[5, 5, 5, 5]}
-        label={{ position: "right", formatter: (val) => Format(val) }}
-      />
-    </BarChart>
-  </ResponsiveContainer>
-</div>
+      <div className="w-11/12 mx-auto my-[50px] h-80">
+        <h3 className="font-bold">Ratings</h3>
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart
+            layout="vertical"
+            data={ratings}
+            margin={{ top: 20, right: 30, bottom: 20 }}
+          >
+            <XAxis type="number" tickFormatter={(value) => Format(value)} />
+            <YAxis type="category" dataKey="name" reversed />
+            <Tooltip />
+            <Bar
+              dataKey="count"
+              fill="#FF8800"
+              barSize={25}
+              radius={[5, 5, 5, 5]}
+              label={{ position: "right", formatter: (val) => Format(val) }}
+            />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
 
       <hr className="my-4 border-gray-200" />
       <div className=" my-[50px] ">

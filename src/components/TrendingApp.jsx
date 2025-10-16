@@ -9,7 +9,6 @@ const TrendingApp = () => {
         <p className="text-gray-400">
           Explore All Trending Apps on the Market developed by us
         </p>
-       
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const AppCard = ({ app }) => {
     }
   };
   return (
-    <Link to={`/AppInfo/${id}`}>
+    <Link to={`/apps/${id}`}>
       <div className="card bg-base-100 w-[200px] h-[270px] lg:w-[317px] lg:h-[404px] px-[5px] shadow-sm rounded-lg ">
         <figure>
           <img
@@ -33,11 +33,9 @@ const AppCard = ({ app }) => {
           <div className="card-actions  flex justify-between items-center">
             <div className="flex items-center gap-1 font-bold bg-[#F1F5E8] text-[#00D390] px-[3px] py-[2px] md:px-[12px] md:py-[6px] rounded-md">
               <Download size={12} /> {Format(downloads)}
-              
             </div>
             <div className="flex items-center gap-1 font-bold bg-[#FFF0E1] text-[#FF8811] px-[3px] py-[2px] md:px-[12px] md:py-[6px] rounded-md">
               <Star size={12} /> {ratingAvg}
-              
             </div>
           </div>
         </div>
