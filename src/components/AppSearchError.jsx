@@ -4,13 +4,13 @@ import { Link } from "react-router";
 const AppSearchError = () => {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mt-[30px] h-[680px] ">
+      <div className="flex flex-col justify-center items-center mt-[30px] text-center space-y-[10px]  ">
         <img
-          src="/src/assets/App-Error.png"
+          src="/App-Error.png"
           alt=""
-          className="w-[500px] h-[500px]"
+          className="w-[250px] h-[250px] md:w-[500px] md:h-[500px]"
         />
-        <h3>Oh No !! App not found!</h3>
+        <h3 className="font-bold text-2xl">Oh No !! App not found!</h3>
         <p>
           The App you are requesting is not found on our system. please try
           another apps.

@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-1">
             <img
-              src="/src/assets/logo.png"
+              src="/logo.png"
               className="w-[40px] h-[40px]"
               alt=""
             />

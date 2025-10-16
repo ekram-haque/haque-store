@@ -7,13 +7,13 @@ const RouteError = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col justify-center items-center mt-[100px] h-[680px] ">
+      <div className="flex flex-col justify-center items-center mt-[30px] text-center space-y-[10px] ">
         <img
-          src="/src/assets/error-404.png"
+          src="/error-404.png"
           alt=""
-          className="w-[500px] h-[500px]"
+          className="w-[250px] h-[250px] md:w-[500px] md:h-[500px]"
         />
-        <h3>Opps , Page not found!</h3>
+        <h3  className="font-bold text-2xl">Shit , Page not found!</h3>
         <p>The page you are looking for is not available.</p>
         <div className="flex justify-center pt-[40px] pb-[80px]">
           <Link

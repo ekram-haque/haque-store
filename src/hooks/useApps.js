@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-// import { useLocation } from "react-router";
+
 
 const useApps = () => {
   const [apps, setApps] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  // const location = useLocation();
+
 
   useEffect(() => {
     setLoading(true);

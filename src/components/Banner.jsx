@@ -19,7 +19,7 @@ const Banner = ({ apps }) => {
 
   return (
     <div>
-      {/* hero section  */}
+     
       <div className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white mt-[-16px] md:p-[80px] pt-[20px] flex flex-col items-center justify-center">
         <h1 className="text-xl md:text-3xl text-white font-bold">
           Trusted by Millions, Built for You

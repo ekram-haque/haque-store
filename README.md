@@ -84,7 +84,8 @@
 ---
 
 ## ☁️ Deployment
-- Hosted on **Cloudflare Pages** for fast global access and performance.
+- Hosted on **Cloudflare Pages** for fast global access and performance.<br>
+[ **live link** ] : (https://haque-store.pages.dev/)
 
 ---
 

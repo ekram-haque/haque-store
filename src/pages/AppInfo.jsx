@@ -86,14 +86,14 @@ const AppInfo = () => {
     <div className="w-11/12 mx-auto ">
       <div className=" bg-white my-6 p-6 rounded-2xl shadow-md border border-gray-200">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
-          {/* App Image */}
+         
           <img
             className="w-[200px] h-[200px] md:w-[250px] md:h-[250px] object-contain rounded-lg"
             src={image}
             alt="app"
           />
 
-          {/* App Details */}
+         
           <div className="flex-1">
             <div>
               <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
@@ -105,7 +105,7 @@ const AppInfo = () => {
 
             <hr className="my-4 border-gray-200" />
 
-            {/* Stats Section */}
+           
             <div className="flex flex-wrap gap-10">
               <div className="flex flex-col items-center md:items-start w-[150px]">
                 <img
@@ -144,7 +144,7 @@ const AppInfo = () => {
               </div>
             </div>
 
-            {/* Install Button */}
+           
             <div className="mt-6">
               {isInstall ? (
                 <button

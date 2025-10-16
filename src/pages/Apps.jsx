@@ -89,7 +89,7 @@ const Apps = () => {
               ) : searchApps.length === 0 ? (
                 <AppSearchError />
               ) : (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-[10px] lg:gap-[16px]">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-[10px] lg:gap-[16px]">
                   {searchApps.map((app) => (
                     <AppCard key={app.id} app={app} />
                   ))}
